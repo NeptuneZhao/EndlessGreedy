@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp\Assembly-CSharp.csproj", "{0AC01A45-4625-4941-9772-80DA9E36A2D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndlessGreedy", "EndlessGreedy\EndlessGreedy.csproj", "{32F6DC65-63A3-4202-9F8F-0CDFCC863757}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AC01A45-4625-4941-9772-80DA9E36A2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC01A45-4625-4941-9772-80DA9E36A2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC01A45-4625-4941-9772-80DA9E36A2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC01A45-4625-4941-9772-80DA9E36A2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F6DC65-63A3-4202-9F8F-0CDFCC863757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F6DC65-63A3-4202-9F8F-0CDFCC863757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F6DC65-63A3-4202-9F8F-0CDFCC863757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F6DC65-63A3-4202-9F8F-0CDFCC863757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
