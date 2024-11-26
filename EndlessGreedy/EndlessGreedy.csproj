@@ -63,18 +63,18 @@
   <ItemGroup>
     <Compile Include="EndlessGreedy.cs" />
     <Compile Include="OK\Battery.cs" />
-    <Compile Include="OK\SuperExteriorWallOK.cs" />
-    <Compile Include="OK\SuperFlushToiletOK.cs" />
-    <Compile Include="OK\SuperLadderOK.cs" />
+    <Compile Include="OK\BackgroundWall.cs" />
+    <Compile Include="OK\Sanitation.cs" />
+    <Compile Include="OK\Ladder.cs" />
     <Compile Include="OK\SuperMetalRefineryOK.cs" />
-    <Compile Include="OK\SuperMineralDeoxidizerOK.cs" />
-    <Compile Include="OK\SuperShowerOK.cs" />
+    <Compile Include="OK\MineralDeoxidizer.cs" />
     <Compile Include="OK\Storage.cs" />
-    <Compile Include="OK\SuperThermalBlockOK.cs" />
-    <Compile Include="OK\SuperTileOK.cs" />
+    <Compile Include="OK\Tile.cs" />
     <Compile Include="OK\SuperWaterPurifierOK.cs" />
-    <Compile Include="OK\SuperWireOK.cs" />
+    <Compile Include="OK\Wire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GlassForge.cs" />
+    <Compile Include="Vent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="mod.yaml">
