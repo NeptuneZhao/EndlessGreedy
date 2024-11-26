@@ -56,37 +56,48 @@ internal class SuperLiquidReservoir
 [HarmonyPatch(typeof(GasReservoirConfig))]
 internal class SuperGasReservoir
 {
-    public static readonly List<Storage.StoredItemModifier> ReservoirStoredItemModifiers = new List<Storage.StoredItemModifier>
-    {
-        Storage.StoredItemModifier.Hide,
-        Storage.StoredItemModifier.Seal
-    };
+	public static readonly List<Storage.StoredItemModifier> ReservoirStoredItemModifiers = new List<Storage.StoredItemModifier>
+	{
+		Storage.StoredItemModifier.Hide,
+		Storage.StoredItemModifier.Seal
+	};
 
-    [HarmonyPrefix]
+	[HarmonyPrefix]
 	[HarmonyPatch("ConfigureBuildingTemplate")]
-    public static bool Prefix(GameObject go)
-    {
-        go.AddOrGet<Reservoir>();
-        Storage storage = BuildingTemplates.CreateDefaultStorage(go);
-        storage.showDescriptor = true;
-        storage.storageFilters = STORAGEFILTERS.GASES;
-        storage.capacityKg = 1e10f;
-        storage.SetDefaultStoredItemModifiers(ReservoirStoredItemModifiers);
-        storage.showCapacityStatusItem = true;
-        storage.showCapacityAsMainStatus = true;
+	public static bool Prefix(GameObject go)
+	{
+		go.AddOrGet<Reservoir>();
+		Storage storage = BuildingTemplates.CreateDefaultStorage(go);
+		storage.showDescriptor = true;
+		storage.storageFilters = STORAGEFILTERS.GASES;
+		storage.capacityKg = 1e10f;
+		storage.SetDefaultStoredItemModifiers(ReservoirStoredItemModifiers);
+		storage.showCapacityStatusItem = true;
+		storage.showCapacityAsMainStatus = true;
 
-        go.AddOrGet<SmartReservoir>();
-        ConduitConsumer conduitConsumer = go.AddOrGet<ConduitConsumer>();
-        conduitConsumer.conduitType = ConduitType.Gas;
-        conduitConsumer.ignoreMinMassCheck = true;
-        conduitConsumer.forceAlwaysSatisfied = true;
-        conduitConsumer.alwaysConsume = true;
-        conduitConsumer.capacityKG = storage.capacityKg;
+		go.AddOrGet<SmartReservoir>();
+		ConduitConsumer conduitConsumer = go.AddOrGet<ConduitConsumer>();
+		conduitConsumer.conduitType = ConduitType.Gas;
+		conduitConsumer.ignoreMinMassCheck = true;
+		conduitConsumer.forceAlwaysSatisfied = true;
+		conduitConsumer.alwaysConsume = true;
+		conduitConsumer.capacityKG = storage.capacityKg;
 
-        ConduitDispenser conduitDispenser = go.AddOrGet<ConduitDispenser>();
-        conduitDispenser.conduitType = ConduitType.Gas;
-        conduitDispenser.elementFilter = null;
+		ConduitDispenser conduitDispenser = go.AddOrGet<ConduitDispenser>();
+		conduitDispenser.conduitType = ConduitType.Gas;
+		conduitDispenser.elementFilter = null;
 
 		return false;
-    }
+	}
+}
+
+/// <summary>
+/// 冰箱
+/// </summary>
+[HarmonyPatch(typeof(RefrigeratorConfig))]
+internal class SuperRefrigerator
+{
+	[HarmonyPostfix]
+	[HarmonyPatch("DoPostConfigureComplete")]
+	public static void Postfix(GameObject go) => go.AddOrGet<Storage>().capacityKg = 1e10f;
 }

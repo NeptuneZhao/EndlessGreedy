@@ -101,7 +101,7 @@ internal class SuperMetalRefinery
 		};
 		ComplexRecipe.RecipeElement[] array4 = new ComplexRecipe.RecipeElement[1]
 		{
-				new ComplexRecipe.RecipeElement(ElementLoader.FindElementByHash(SimHashes.Steel).tag, 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+				new ComplexRecipe.RecipeElement(ElementLoader.FindElementByHash(SimHashes.Steel).tag, 1000f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		string obsolete_id2 = ComplexRecipeManager.MakeObsoleteRecipeID("MetalRefinery", element.tag);
 		string text2 = ComplexRecipeManager.MakeRecipeID("MetalRefinery", array3, array4);
