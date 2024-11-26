@@ -67,11 +67,10 @@
     <Compile Include="OK\SuperExteriorWallOK.cs" />
     <Compile Include="OK\SuperFlushToiletOK.cs" />
     <Compile Include="OK\SuperLadderOK.cs" />
-    <Compile Include="OK\SuperLiquidReservoirOK.cs" />
     <Compile Include="OK\SuperMetalRefineryOK.cs" />
     <Compile Include="OK\SuperMineralDeoxidizerOK.cs" />
     <Compile Include="OK\SuperShowerOK.cs" />
-    <Compile Include="OK\SuperStorageLockerOK.cs" />
+    <Compile Include="OK\Storage.cs" />
     <Compile Include="OK\SuperThermalBlockOK.cs" />
     <Compile Include="OK\SuperTileOK.cs" />
     <Compile Include="OK\SuperWaterPurifierOK.cs" />
