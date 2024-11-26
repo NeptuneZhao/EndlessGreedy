@@ -62,8 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndlessGreedy.cs" />
-    <Compile Include="OK\SuperBatteryMediumOK.cs" />
-    <Compile Include="OK\SuperBatteryOK.cs" />
+    <Compile Include="OK\Battery.cs" />
     <Compile Include="OK\SuperExteriorWallOK.cs" />
     <Compile Include="OK\SuperFlushToiletOK.cs" />
     <Compile Include="OK\SuperLadderOK.cs" />
