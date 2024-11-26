@@ -62,8 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndlessGreedy.cs" />
+    <Compile Include="PolyMerizer.cs" />
     <Compile Include="OK\Battery.cs" />
     <Compile Include="OK\BackgroundWall.cs" />
+    <Compile Include="OK\GlassForge.cs" />
     <Compile Include="OK\Sanitation.cs" />
     <Compile Include="OK\Ladder.cs" />
     <Compile Include="OK\SuperMetalRefineryOK.cs" />
@@ -71,10 +73,9 @@
     <Compile Include="OK\Storage.cs" />
     <Compile Include="OK\Tile.cs" />
     <Compile Include="OK\SuperWaterPurifierOK.cs" />
+    <Compile Include="OK\Vent.cs" />
     <Compile Include="OK\Wire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GlassForge.cs" />
-    <Compile Include="Vent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="mod.yaml">

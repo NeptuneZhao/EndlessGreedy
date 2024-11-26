@@ -18,6 +18,13 @@ public class SuperGlassForge
 		Storage.StoredItemModifier.Insulate
 	};
 
+	[HarmonyPostfix]
+	[HarmonyPatch("CreateBuildingDef")]
+	public static void Postfix(ref BuildingDef __result)
+	{
+		__result.SelfHeatKilowattsWhenActive = -200f;
+	}
+
 	[HarmonyPrefix]
 	[HarmonyPatch("ConfigureBuildingTemplate")]
 	public static bool Prefix(GameObject go)

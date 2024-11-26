@@ -90,3 +90,14 @@ internal class SuperGasReservoir
 		return false;
     }
 }
+
+/// <summary>
+/// 冰箱
+/// </summary>
+[HarmonyPatch(typeof(RefrigeratorConfig))]
+internal class SuperRefrigerator
+{
+    [HarmonyPostfix]
+    [HarmonyPatch("ConfigureBuildingTemplate")]
+    public static void Postfix(GameObject go) => go.AddOrGet<Storage>().capacityKg = 1e10f;
+}
