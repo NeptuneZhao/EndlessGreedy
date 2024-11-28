@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndlessGreedy.cs" />
-    <Compile Include="PolyMerizer.cs" />
+    <Compile Include="OK\PolyMerizer.cs" />
     <Compile Include="OK\Battery.cs" />
     <Compile Include="OK\BackgroundWall.cs" />
     <Compile Include="OK\GlassForge.cs" />
@@ -76,6 +76,7 @@
     <Compile Include="OK\Vent.cs" />
     <Compile Include="OK\Wire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AttributeLevel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="mod.yaml">

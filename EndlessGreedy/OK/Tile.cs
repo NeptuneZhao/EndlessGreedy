@@ -50,14 +50,14 @@ internal class SuperHydroponicFarm
 [HarmonyPatch(typeof(MeshTileConfig))]
 internal class SuperMeshTile
 {
-    [HarmonyPostfix]
-    [HarmonyPatch("ConfigureBuildingTemplate")]
-    public static void Postfix(GameObject go)
-    {
-        SimCellOccupier simCellOccupier = go.AddOrGet<SimCellOccupier>();
-        simCellOccupier.doReplaceElement = true;
-        simCellOccupier.strengthMultiplier = 100f;
-        simCellOccupier.movementSpeedMultiplier = 100f;
-    }
+	[HarmonyPostfix]
+	[HarmonyPatch("ConfigureBuildingTemplate")]
+	public static void Postfix(GameObject go)
+	{
+		SimCellOccupier simCellOccupier = go.AddOrGet<SimCellOccupier>();
+		simCellOccupier.doReplaceElement = true;
+		simCellOccupier.strengthMultiplier = 100f;
+		simCellOccupier.movementSpeedMultiplier = 100f;
+	}
 
 }
