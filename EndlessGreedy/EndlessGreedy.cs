@@ -16,12 +16,6 @@ namespace EndlessGreedy
 			public static void Postfix()
 			{
 				Debug.Log("I execute after Db.Initialize!");
-				Finalizer(msg: "Oh my godness!");
-			}
-
-			public static void Finalizer(string msg)
-			{
-				Debug.Log($"I execute after Db.Initialize and all postfixes!{msg}");
 			}
 		}
 

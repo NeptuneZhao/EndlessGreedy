@@ -6,5 +6,5 @@ internal class SuperAttributeLevel
 {
 	[HarmonyPostfix]
 	[HarmonyPatch("GetExperienceForNextLevel")]
-	public static void Postfix(ref float __result) => __result = 10f;
+	public static void Postfix(ref float __result) => __result = 1f;
 }
