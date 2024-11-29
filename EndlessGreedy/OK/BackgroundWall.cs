@@ -11,7 +11,7 @@ internal class SuperExteriorWall
 	public static void Postfix(ref BuildingDef __result)
 	{
 		__result.BaseDecor = 5f;
-		__result.BaseDecorRadius = 100f;
+		__result.BaseDecorRadius = 5f;
 	}
 }
 

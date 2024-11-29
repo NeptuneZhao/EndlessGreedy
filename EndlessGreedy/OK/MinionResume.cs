@@ -12,7 +12,7 @@ internal class SuperMinionResume
 		if (!__instance.GetComponent<KPrefabID>().HasTag(GameTags.Dead))
 		{
 			__instance.DEBUG_PassiveExperienceGained += dt / 2f;
-			__instance.AddExperience(dt / 2f + 1000f);
+			__instance.AddExperience(__instance.TotalSkillPointsGained < 35 ? dt / 2f + 1000f : dt);
 		}
 		return false;
 	}

@@ -19,7 +19,7 @@ internal class SuperMicrobeMusher
 		};
 		ComplexRecipe.RecipeElement[] array2 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("MushBar".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+			new ComplexRecipe.RecipeElement("MushBar".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		MushBarConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("MicrobeMusher", array, array2), array, array2)
 		{
@@ -37,7 +37,7 @@ internal class SuperMicrobeMusher
 		};
 		ComplexRecipe.RecipeElement[] array4 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("BasicPlantBar".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+			new ComplexRecipe.RecipeElement("BasicPlantBar".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		BasicPlantBarConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("MicrobeMusher", array3, array4), array3, array4)
 		{
@@ -55,7 +55,7 @@ internal class SuperMicrobeMusher
 		};
 		ComplexRecipe.RecipeElement[] array6 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Tofu".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+			new ComplexRecipe.RecipeElement("Tofu".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		TofuConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("MicrobeMusher", array5, array6), array5, array6)
 		{
@@ -73,7 +73,7 @@ internal class SuperMicrobeMusher
 		};
 		ComplexRecipe.RecipeElement[] array8 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("FruitCake".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+			new ComplexRecipe.RecipeElement("FruitCake".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		FruitCakeConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("MicrobeMusher", array7, array8), array7, array8)
 		{
@@ -91,7 +91,7 @@ internal class SuperMicrobeMusher
 		};
 		ComplexRecipe.RecipeElement[] array10 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Pemmican".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
+			new ComplexRecipe.RecipeElement("Pemmican".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.AverageTemperature)
 		};
 		PemmicanConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("MicrobeMusher", array9, array10), array9, array10, DlcManager.AVAILABLE_DLC_2)
 		{
@@ -122,7 +122,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array2 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("PickledMeal", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("PickledMeal", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		PickledMealConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array, array2), array, array2)
 		{
@@ -140,7 +140,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array4 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("FriedMushBar".ToTag(), 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("FriedMushBar".ToTag(), 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		FriedMushBarConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array3, array4), array3, array4)
 		{
@@ -158,7 +158,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array6 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("FriedMushroom", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("FriedMushroom", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		FriedMushroomConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array5, array6), array5, array6)
 		{
@@ -176,7 +176,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array8 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Pancakes", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("Pancakes", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		CookedEggConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array7, array8), array7, array8)
 		{
@@ -194,7 +194,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array10 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("CookedMeat", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("CookedMeat", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		CookedMeatConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array9, array10), array9, array10)
 		{
@@ -212,7 +212,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array12 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("CookedFish", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("CookedFish", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		CookedMeatConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array11, array12), array11, array12)
 		{
@@ -230,7 +230,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array16 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("GrilledPrickleFruit", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("GrilledPrickleFruit", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		GrilledPrickleFruitConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array15, array16), array15, array16)
 		{
@@ -249,7 +249,7 @@ internal class SuperCookingStation
 			};
 			ComplexRecipe.RecipeElement[] array18 = new ComplexRecipe.RecipeElement[1]
 			{
-				new ComplexRecipe.RecipeElement("SwampDelights", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+				new ComplexRecipe.RecipeElement("SwampDelights", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 			};
 			CookedEggConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array17, array18), array17, array18)
 			{
@@ -268,7 +268,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array20 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("ColdWheatBread", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("ColdWheatBread", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		ColdWheatBreadConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array19, array20), array19, array20)
 		{
@@ -286,7 +286,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array22 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("CookedEgg", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("CookedEgg", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		CookedEggConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array21, array22), array21, array22)
 		{
@@ -305,7 +305,7 @@ internal class SuperCookingStation
 			};
 			ComplexRecipe.RecipeElement[] array24 = new ComplexRecipe.RecipeElement[1]
 			{
-				new ComplexRecipe.RecipeElement("WormBasicFood", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+				new ComplexRecipe.RecipeElement("WormBasicFood", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 			};
 			WormBasicFoodConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array23, array24), array23, array24)
 			{
@@ -325,7 +325,7 @@ internal class SuperCookingStation
 			};
 			ComplexRecipe.RecipeElement[] array26 = new ComplexRecipe.RecipeElement[1]
 			{
-				new ComplexRecipe.RecipeElement("WormSuperFood", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+				new ComplexRecipe.RecipeElement("WormSuperFood", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 			};
 			WormSuperFoodConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array25, array26), array25, array26)
 			{
@@ -343,7 +343,7 @@ internal class SuperCookingStation
 		};
 		ComplexRecipe.RecipeElement[] array28 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("CookedPikeapple", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("CookedPikeapple", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		CookedPikeappleConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("CookingStation", array27, array28), array27, array28, DlcManager.AVAILABLE_DLC_2)
 		{
@@ -372,7 +372,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array2 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Salsa", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("Salsa", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		SalsaConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array, array2), array, array2)
 		{
@@ -389,7 +389,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array4 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("MushroomWrap", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("MushroomWrap", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		MushroomWrapConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array3, array4), array3, array4)
 		{
@@ -406,7 +406,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array6 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("SurfAndTurf", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("SurfAndTurf", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		SurfAndTurfConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array5, array6), array5, array6)
 		{
@@ -423,7 +423,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array8 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("SpiceBread", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("SpiceBread", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		SpiceBreadConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array7, array8), array7, array8)
 		{
@@ -440,7 +440,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array10 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("SpicyTofu", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("SpicyTofu", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		SpicyTofuConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array9, array10), array9, array10)
 		{
@@ -457,7 +457,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array12 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Curry", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("Curry", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		SpicyTofuConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array11, array12), array11, array12)
 		{
@@ -474,7 +474,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array14 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Quiche", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("Quiche", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		QuicheConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array13, array14), array13, array14)
 		{
@@ -491,7 +491,7 @@ internal class SueprGourmetCookingStation
         };
 		ComplexRecipe.RecipeElement[] array16 = new ComplexRecipe.RecipeElement[1]
 		{
-			new ComplexRecipe.RecipeElement("Burger", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+			new ComplexRecipe.RecipeElement("Burger", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 		};
 		BurgerConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array15, array16), array15, array16)
 		{
@@ -510,7 +510,7 @@ internal class SueprGourmetCookingStation
             };
 			ComplexRecipe.RecipeElement[] array18 = new ComplexRecipe.RecipeElement[1]
 			{
-				new ComplexRecipe.RecipeElement("BerryPie", 1e5f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
+				new ComplexRecipe.RecipeElement("BerryPie", 100f, ComplexRecipe.RecipeElement.TemperatureOperation.Heated)
 			};
 			BerryPieConfig.recipe = new ComplexRecipe(ComplexRecipeManager.MakeRecipeID("GourmetCookingStation", array17, array18), array17, array18)
 			{

@@ -8,7 +8,7 @@ internal class SuperPolymerizer
 	[HarmonyPatch("CreateBuildingDef")]
 	public static void Postfix(ref BuildingDef __result)
     {
-        __result.SelfHeatKilowattsWhenActive = -250f;
+        __result.SelfHeatKilowattsWhenActive = -50f;
     }
 
     [HarmonyPrefix]
@@ -42,9 +42,9 @@ internal class SuperPolymerizer
 		};
 		elementConverter.outputElements = new ElementConverter.OutputElement[3]
 		{
-			new ElementConverter.OutputElement(10f, SimHashes.Polypropylene, 273.15f, useEntityTemperature: false, storeOutput: true),
-			new ElementConverter.OutputElement(0, SimHashes.Steam, 273.15f, useEntityTemperature: false, storeOutput: true),
-			new ElementConverter.OutputElement(0.5f, SimHashes.Oxygen, 273.15f, useEntityTemperature: false, storeOutput: true)
+			new ElementConverter.OutputElement(50f, SimHashes.Polypropylene, 298.15f, useEntityTemperature: false, storeOutput: true),
+			new ElementConverter.OutputElement(0, SimHashes.Steam, 373.15f, useEntityTemperature: false, storeOutput: true),
+			new ElementConverter.OutputElement(0.5f, SimHashes.Oxygen, 298.15f, useEntityTemperature: false, storeOutput: true)
 		};
 		go.AddOrGet<DropAllWorkable>();
 		Prioritizable.AddRef(go);

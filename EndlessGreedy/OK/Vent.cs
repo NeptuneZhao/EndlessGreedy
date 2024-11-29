@@ -11,7 +11,7 @@ internal class SuperGasVent
 	[HarmonyPatch("ConfigureBuildingTemplate")]
 	public static void Postfix(GameObject go)
 	{
-		go.AddOrGet<Vent>().overpressureMass = 1e10f;
+		go.AddOrGet<Vent>().overpressureMass = 1e5f;
 	}
 }
 

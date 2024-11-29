@@ -65,7 +65,7 @@ internal class SuperShower
 		};
 		elementConverter.outputElements = new ElementConverter.OutputElement[]
 		{
-			new ElementConverter.OutputElement(10f, SimHashes.DirtyWater, 0f, false, true, 0f, 0.5f, 1f, byte.MaxValue, 0, true)
+			new ElementConverter.OutputElement(50f, SimHashes.DirtyWater, 0f, false, true, 0f, 0.5f, 1f, byte.MaxValue, 0, true)
 		};
 
 		Storage storage = go.AddOrGet<Storage>();

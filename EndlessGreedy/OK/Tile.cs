@@ -11,8 +11,8 @@ internal class SuperTile
 	[HarmonyPatch("CreateBuildingDef")]
 	public static void Postfix(ref BuildingDef __result)
 	{
-		__result.BaseDecor = 25f;
-		__result.BaseDecorRadius = 25f;
+		__result.BaseDecor = 10f;
+		__result.BaseDecorRadius = 10f;
 	}
 
 	[HarmonyPostfix]
@@ -21,8 +21,8 @@ internal class SuperTile
 	{
 		SimCellOccupier simCellOccupier = go.AddOrGet<SimCellOccupier>();
 		simCellOccupier.doReplaceElement = true;
-		simCellOccupier.strengthMultiplier = 100f;
-		simCellOccupier.movementSpeedMultiplier = 100f;
+		simCellOccupier.strengthMultiplier = 10f;
+		simCellOccupier.movementSpeedMultiplier = 10f;
 	}
 }
 
@@ -38,8 +38,8 @@ internal class SuperHydroponicFarm
 	{
 		SimCellOccupier simCellOccupier = go.AddOrGet<SimCellOccupier>();
 		simCellOccupier.doReplaceElement = true;
-		simCellOccupier.strengthMultiplier = 100f;
-		simCellOccupier.movementSpeedMultiplier = 100f;
+		simCellOccupier.strengthMultiplier = 10f;
+		simCellOccupier.movementSpeedMultiplier = 10f;
 	}
 
 }
@@ -56,8 +56,8 @@ internal class SuperMeshTile
 	{
 		SimCellOccupier simCellOccupier = go.AddOrGet<SimCellOccupier>();
 		simCellOccupier.doReplaceElement = true;
-		simCellOccupier.strengthMultiplier = 100f;
-		simCellOccupier.movementSpeedMultiplier = 100f;
+		simCellOccupier.strengthMultiplier = 10f;
+		simCellOccupier.movementSpeedMultiplier = 10f;
 	}
 
 }

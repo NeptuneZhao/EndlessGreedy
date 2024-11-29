@@ -11,8 +11,8 @@ internal class SuperLadder
 	[HarmonyPatch("CreateBuildingDef")]
 	public static void Postfix(ref BuildingDef __result)
 	{
-		__result.BaseDecor = 25f;
-		__result.BaseDecorRadius = 25f;
+		__result.BaseDecor = 10f;
+		__result.BaseDecorRadius = 10f;
 	}
 
     [HarmonyPostfix]
@@ -20,8 +20,8 @@ internal class SuperLadder
     public static void Postfix(GameObject go)
     {
         Ladder ladder = go.AddOrGet<Ladder>();
-        ladder.upwardsMovementSpeedMultiplier = 100f;
-        ladder.downwardsMovementSpeedMultiplier = 100f;
+        ladder.upwardsMovementSpeedMultiplier = 10f;
+        ladder.downwardsMovementSpeedMultiplier = 10f;
         go.AddOrGet<AnimTileable>();
     }
 }
