@@ -13,7 +13,7 @@ public class SuperBattery
     {
         Battery battery = go.AddOrGet<Battery>();
         battery.capacity = 1e5f;
-        battery.joulesLostPerSecond = -100f;
+        battery.joulesLostPerSecond = 1f;
     }
 }
 
@@ -29,6 +29,6 @@ public class SuperBatteryMedium
 	{
 		Battery battery = go.AddOrGet<Battery>();
 		battery.capacity = 1e10f;
-		battery.joulesLostPerSecond = -1e5f;
+		battery.joulesLostPerSecond = 2f;
 	}
 }

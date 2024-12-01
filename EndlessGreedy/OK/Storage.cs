@@ -97,7 +97,18 @@ internal class SuperGasReservoir
 [HarmonyPatch(typeof(RefrigeratorConfig))]
 internal class SuperRefrigerator
 {
-	[HarmonyPostfix]
-	[HarmonyPatch("DoPostConfigureComplete")]
-	public static void Postfix(GameObject go) => go.AddOrGet<Storage>().capacityKg = 1e10f;
+	[HarmonyPostfix, HarmonyPatch(nameof(RefrigeratorConfig.CreateBuildingDef))]
+	public static void Postfix0(ref BuildingDef __result)
+	{
+		__result.EnergyConsumptionWhenActive = 250f;
+
+	}
+
+	[HarmonyPostfix, HarmonyPatch(nameof(RefrigeratorConfig.DoPostConfigureComplete))]
+	public static void Postfix1(GameObject go)
+	{
+		go.AddOrGet<Storage>().capacityKg = 1e10f;
+		go.AddOrGetDef<RefrigeratorController.Def>().simulatedInternalTemperature = 248.15f;
+
+	}
 }

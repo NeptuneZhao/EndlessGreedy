@@ -34,7 +34,7 @@ internal class SuperIceCooledFan
 		go.AddOrGet<LoopingSounds>();
 		Prioritizable.AddRef(go);
 		IceCooledFan iceCooledFan = go.AddOrGet<IceCooledFan>();
-		iceCooledFan.coolingRate = 1000f;
+		iceCooledFan.coolingRate = 200f;
 		iceCooledFan.targetTemperature = 273.15f;
 		iceCooledFan.iceStorage = storage;
 		iceCooledFan.liquidStorage = storage2;

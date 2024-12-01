@@ -7,6 +7,6 @@ internal class SuperWire
 	[HarmonyPatch("GetMaxWattageAsFloat")]
 	public static void Postfix(ref float __result)
 	{
-		__result = 1e10f;
+		__result = 5e5f;
 	}
 }

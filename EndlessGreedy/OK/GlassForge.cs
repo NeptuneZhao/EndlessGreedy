@@ -22,7 +22,7 @@ public class SuperGlassForge
 	[HarmonyPatch("CreateBuildingDef")]
 	public static void Postfix(ref BuildingDef __result)
 	{
-		__result.SelfHeatKilowattsWhenActive = -200f;
+		__result.SelfHeatKilowattsWhenActive = -50f;
 	}
 
 	[HarmonyPrefix]
@@ -68,7 +68,7 @@ public class SuperGlassForge
 		string text = ComplexRecipeManager.MakeRecipeID("GlassForge", array, array2);
 		new ComplexRecipe(text, array, array2)
 		{
-			time = 15f,
+			time = 5f,
 			nameDisplay = ComplexRecipe.RecipeNameDisplay.Result,
 			description = string.Format(STRINGS.BUILDINGS.PREFABS.GLASSFORGE.RECIPE_DESCRIPTION, ElementLoader.GetElement(array2[0].material).name, ElementLoader.GetElement(array[0].material).name),
 			fabricators = new List<Tag> { TagManager.Create("GlassForge") }

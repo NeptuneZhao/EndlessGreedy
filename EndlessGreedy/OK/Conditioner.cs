@@ -55,28 +55,26 @@ internal class SuperAirConditioner
 		__result.Overheatable = false;
 	}
 
-    [HarmonyPrefix, HarmonyPatch(nameof(AirConditionerConfig.ConfigureBuildingTemplate))]
-    public static bool Prefix(UnityEngine.GameObject go)
-    {
-        go.AddOrGet<LoopingSounds>();
-        AirConditioner airConditioner = go.AddOrGet<AirConditioner>();
-        airConditioner.temperatureDelta = -50f;
-        airConditioner.maxEnvironmentDelta = -50f;
-        go.AddOrGet<KBatchedAnimHeatPostProcessingEffect>();
-        Storage storage = BuildingTemplates.CreateDefaultStorage(go);
-        storage.showInUI = true;
-        storage.SetDefaultStoredItemModifiers(new List<Storage.StoredItemModifier>
-        {
-            Storage.StoredItemModifier.Hide,
-            Storage.StoredItemModifier.Seal,
-            Storage.StoredItemModifier.Insulate
+	[HarmonyPrefix, HarmonyPatch(nameof(AirConditionerConfig.ConfigureBuildingTemplate))]
+	public static bool Prefix(UnityEngine.GameObject go)
+	{
+		go.AddOrGet<LoopingSounds>();
+		AirConditioner airConditioner = go.AddOrGet<AirConditioner>();
+		airConditioner.temperatureDelta = -50f;
+		airConditioner.maxEnvironmentDelta = -50f;
+		go.AddOrGet<KBatchedAnimHeatPostProcessingEffect>();
+		Storage storage = BuildingTemplates.CreateDefaultStorage(go);
+		storage.showInUI = true;
+		storage.SetDefaultStoredItemModifiers(new List<Storage.StoredItemModifier>
+		{
+			Storage.StoredItemModifier.Hide,
+			Storage.StoredItemModifier.Seal,
+			Storage.StoredItemModifier.Insulate
 		});
-        ConduitConsumer conduitConsumer = go.AddOrGet<ConduitConsumer>();
-        conduitConsumer.conduitType = ConduitType.Gas;
-        conduitConsumer.consumptionRate = 1f;
+		ConduitConsumer conduitConsumer = go.AddOrGet<ConduitConsumer>();
+		conduitConsumer.conduitType = ConduitType.Gas;
+		conduitConsumer.consumptionRate = 1f;
 
-        return false;
-    }
-
-
+		return false;
+	}
 }

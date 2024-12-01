@@ -25,7 +25,7 @@ internal class SuperThermalBlock
 	[HarmonyPatch("CreateBuildingDef")]
 	public static void Postfix(ref BuildingDef __result)
 	{
-		__result.Mass = new float[] { 10f };
+		__result.Mass = new float[] { 50f };
 		__result.MassForTemperatureModification = 2f;
 	}
 }

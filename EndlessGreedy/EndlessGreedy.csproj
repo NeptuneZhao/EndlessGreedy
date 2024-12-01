@@ -63,14 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndlessGreedy.cs" />
-    <Compile Include="OK\AttributeLevel.cs" />
-    <Compile Include="OK\Cooker.cs" />
+    <Compile Include="OK\AttributeLevelOK.cs" />
+    <Compile Include="OK\Conditioner.cs" />
     <Compile Include="OK\DlcManager.cs" />
     <Compile Include="OK\LiquidHeater.cs" />
     <Compile Include="OK\MinionResume.cs" />
     <Compile Include="OK\PolyMerizer.cs" />
-    <Compile Include="OK\Battery.cs" />
-    <Compile Include="OK\BackgroundWall.cs" />
+    <Compile Include="OK\BatteryOK.cs" />
+    <Compile Include="OK\BackgroundWallOK.cs" />
     <Compile Include="OK\GlassForge.cs" />
     <Compile Include="OK\PressureMonitor.cs" />
     <Compile Include="OK\Sanitation.cs" />
@@ -81,13 +81,12 @@
     <Compile Include="OK\Tile.cs" />
     <Compile Include="OK\SuperWaterPurifierOK.cs" />
     <Compile Include="OK\Vent.cs" />
+    <Compile Include="OK\Generator.cs" />
     <Compile Include="OK\Wire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="OK\CosmicResearchCenter.cs" />
     <Compile Include="OK\IceCooledFan.cs" />
-    <Compile Include="Conditioner.cs" />
-    <Compile Include="OK\KeroseneEngine.cs" />
+    <Compile Include="OK\KeroseneEngineOK.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="mod.yaml">
